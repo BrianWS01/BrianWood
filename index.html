@@ -2,289 +2,381 @@
 <html lang="pt-BR">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Portfólio Brian Wood</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Portfólio Brian Wood</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <!-- Bootstrap CSS CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="assets/style/styles.css" />
 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
-
-<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
-
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-
-
-    <!-- Bootstrap CSS CDN -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
-
-
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-
-
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="styles.css" />
-</head>/
-
-
+  <style>
+    /* Fundo das partículas */
+   
+  </style>
+</head>
 
 <body>
 
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-        <div class="container">
-            <a class="navbar-brand" href="#">Portfólio - Brian Wood</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Alternar navegação">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto align-items-center">
-                    <li class="nav-item"><a class="nav-link" href="#bemvindo">Início</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#sobre">Sobre</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#habilidades">Habilidades</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#projetos">Projetos</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
-                    <li class="nav-item ms-3">
-                        <button id="theme-toggle" class="btn btn-outline-light btn-sm"
-                            title="Alternar modo claro/escuro">🌗</button>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-<main class="row">
-    <section id="bemvindo" class="d-flex flex-row justify-content-center align-items-center text-light bg-dark"
-        style="min-height: 80vh; padding: 5rem;">
-        <!-- Bloco do texto -->
-        <div class="d-flex flex-column justify-content-center align-items-start text-start"
-            style="flex: 1; padding-right: 2rem;">
-            <h1 class="display-4 mb-3 animate__animated animate__fadeInRight">Olá, eu sou Brian Wood</h1>
-            <p class="lead mb-4 animate__animated animate__fadeInUp">Desenvolvedor Front-End focado em criar interfaces modernas e funcionais.</p>
-            <div>
-                <a href="#contato" class="btn btn-light animate__animated animate__fadeInRight">Entrar em contato</a>
-                <a href="Brian Wood Silva CV (3) (1).pdf" target="_blank" class="btn btn-light animate__animated animate__fadeInRight">Download
-                    CV</a>
-            </div>
-        </div>
-
-        <!-- Bloco da imagem -->
-        <div style="flex: 1; display: flex; justify-content: center; align-items: center;">
-            <img src="1732570963174.jpg" alt="Foto do Brian Wood"
-                class="img-fluid rounded-circle border border-5 border-primary"
-                style="max-height: 400px; object-fit: cover;">
-        </div>
-    </section>
-
-    <!-- Sobre -->
-    <section id="sobre" class="container my-5 py-5">
-        <h2 class="text-center mb-4">Sobre Mim</h2>
-        <p class="text-center font fs-3">
-            Desenvolvedor front-end com experiência em HTML, CSS, JavaScript e Bootstrap. Gosto de criar
-            soluções elegantes e simples, que proporcionem ótima experiência ao usuário.
-        </p>
-    </section>
-    <!-- Habilidades -->
-</main>
-
-    <section id="habilidades" class="container my-5 py-5">
-        <h2 class="text-center mb-4">Habilidades</h2>
-        <br>
-        <div class="row justify-content-center">
-            <div class="col-6 col-md-3 mb-3 text-center max-height: 40px; object-fit: cover;">
-                <img src="html5-original.svg" alt="Icon HTML" style="max-height: 100px; object-fit: cover;">
-            </div>
-            <div class="col-6 col-md-3 mb-3 text-center">
-                <img src="css3-original.svg" alt="Icon CSS" style="max-height: 100px; object-fit: cover;">
-            </div>
-            <div class="col-6 col-md-3 mb-3 text-center">
-                <img src="javascript-plain.svg" alt="Icon JavaScript" style="max-height: 90px; object-fit: cover;">
-            </div>
-            <div class="col-6 col-md-3 mb-3 text-center">
-                <img src="bootstrap-original.svg" alt="Icon bootstrap" style="max-height: 100px; object-fit: cover;">
-            </div>
-        </div>
-    </section>
-
-
-
-    <!-- Seção de Projetos -->
-    <h2 class="text-center mb-4 text-light">Projetos</h2>
-    <div class="row justify-content-center gap-5">
-
-<!-- CARD 1: Exatas Reformas -->
-<div class="col-md-5">
-  <div class="card card-sm h-100 shadow-sm bg-dark text-light"> 
-    <iframe src="https://www.exatasreformas.com.br" title="Exatas Reformas" loading="lazy"
-      style="border:0;"></iframe>
-    <div class="card-body">
-      <h5 class="card-title">Exatas Reformas</h5>
-      <button class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#modalExatas">Ver mais</button>
-    </div>
-  </div>
-</div>
-
-<!-- CARD 2: Lanches Busch -->
-<div class="col-md-5">
-  <div class="card card-sm h-10 shadow-sm bg-dark text-light">
-    <iframe src="https://brianws01.github.io/LanchesBusch/" title="Preview Lanches Busch" loading="lazy"
-      style="border:0;"></iframe>
-    <div class="card-body">
-      <h5 class="card-title">Lanches Busch</h5>
-      <button class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#modalLanchesBusch">Ver mais</button>
-    </div>
-  </div>
-</div>
-
-
-
-<!-- MODAIS -->
-
-<!-- MODAL 1: Exatas Reformas -->
-<div class="modal fade" id="modalExatas" tabindex="-1" aria-labelledby="modalExatasLabel" aria-hidden="true">
-  <div class="modal-dialog modal-xl modal-dialog-centered">
-    <div class="modal-content bg-dark text-light">
-      <div class="modal-header border-0">
-        <h5 class="modal-title" id="modalExatasLabel">Exatas Reformas</h5>
-        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Fechar"></button>
-      </div>
-      <div class="modal-body d-flex flex-column flex-md-row gap-4">
-        <div class="w-100">
-          <div class="ratio ratio-16x9">
-            <iframe src="https://www.exatasreformas.com.br" title="Exatas Reformas" loading="lazy" style="border:0;" allowfullscreen></iframe>
-          </div>
-        </div>
-        <div class="w-100 justify-content-center">
-          <p>Projeto de Freelancer para uma Empresa especializada em reformas e construções residenciais, escolar e comerciais com atendimento personalizado e soluções eficientes.</p>
-          <p><strong>Data:</strong> 20 de Julho de 2025</p>
-          <div class="d-flex gap-2 flex-wrap">
-            <a href="https://www.exatasreformas.com.br" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Acessar site</a>
-            <a href="https://github.com/BrianWS01/Exatas" target="_blank" rel="noopener noreferrer" class="btn btn-outline-light">Ver repositório</a>
-          </div>
-        </div>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">Portfólio - Brian Wood</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Alternar navegação">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto align-items-center">
+          <li class="nav-item"><a class="nav-link" href="#bemvindo">Início</a></li>
+          <li class="nav-item"><a class="nav-link" href="#sobre">Sobre</a></li>
+          <li class="nav-item"><a class="nav-link" href="#habilidades">Habilidades</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projetos">Projetos</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
+          <li class="nav-item ms-3">
+            <button id="theme-toggle" class="btn btn-outline-light btn-sm"
+              title="Alternar modo claro/escuro">🌗</button>
+          </li>
+        </ul>
       </div>
     </div>
-  </div>
-</div>
+  </nav>
 
-<!-- MODAL 2: Lanches Busch -->
-<div class="modal fade" id="modalLanchesBusch" tabindex="-1" aria-labelledby="modalLanchesBuschLabel" aria-hidden="true">
-  <div class="modal-dialog modal-lg modal-dialog-centered">
-    <div class="modal-content bg-dark text-light">
-      <div class="modal-header border-0">
-        <h5 class="modal-title" id="modalLanchesBuschLabel">Lanches Busch</h5>
-        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Fechar"></button>
-      </div>
-      <div class="modal-body d-flex flex-column flex-md-row gap-4">
-        <div class="w-100">
-          <div class="ratio ratio-16x9">
-            <iframe src="https://brianws01.github.io/LanchesBusch/" title="Lanches Busch" loading="lazy" style="border:0;" allowfullscreen></iframe>
-          </div>
-        </div>
-        <div class="w-100  justify-content-center">
-          <p>Site de hamburgueria com sistema de compras integradas, API de frete, design responsivo e funcional.</p>
-          <p><strong>Data:</strong> 15 de Março de 202</p>
-          <div class="d-flex gap-2 flex-wrap">
-            <a href="https://brianws01.github.io/LanchesBusch/" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Acessar projeto</a>
-            <a href="https://github.com/BrianWS01/LanchesBusch" target="_blank" rel="noopener noreferrer" class="btn btn-outline-light">Ver repositório</a>
-          </div>
-        </div>
+  <main class="row">
+<section id="bemvindo" class="position-relative d-flex flex-row justify-content-center align-items-center text-light"
+  style="min-height: 100vh; overflow: hidden;">
+
+  <!-- Fundo sólido -->
+  <div class="position-absolute top-0 start-0 w-100 h-100 bg-dark" style="z-index: 0;"></div>
+
+  <!-- Partículas -->
+  <div id="particles-js" class="position-absolute top-0 start-0 w-100 h-100" style="z-index: 1;"></div>
+
+  <!-- Conteúdo principal -->
+  <div class="container position-relative z-2 d-flex flex-wrap align-items-center">
+    <!-- Texto -->
+    <div class="col-md-6 text-start mb-4 mb-md-0 animate__animated animate__fadeInLeft">
+      <h1 class="display-4 fw-bold mb-3">Olá, eu sou <span class="text-primary">Brian Wood</span></h1>
+      <p class="lead mb-4">Desenvolvedor Front-End apaixonado por criar interfaces modernas, rápidas e acessíveis.</p>
+      <div class="d-flex gap-3">
+        <a href="#contato" class="btn btn-primary btn-lg shadow-sm">Entrar em contato</a>
+        <a href="#" target="_blank" class="btn btn-outline-light btn-lg shadow-sm">Download CV</a>
       </div>
     </div>
-  </div>
-</div>
 
-
-
-
-    <!-- Contato -->
-<section id="contato" class="container my-5 py-5">
-  <h2 class="text-center mb-4">Contatos</h2>
-  <div class="d-flex justify-content-center flex-wrap" style="gap: 4rem;">
-    <div class="contato-item text-center">
-      <a href="mailto:rhuanbello@gmail.com" class="text-decoration-none text-dark">
-        <div class="icon-circle mb-3">
-          <i class="bi bi-envelope"></i>
-        </div>
-        <strong>E-mail</strong>
-        <small>Brianwood1126@gmail.com</small>
-      </a>
-    </div>
-
-    <div class="contato-item text-center">
-      <a href="tel:+5521968892704" class="text-decoration-none text-dark">
-        <div class="icon-circle mb-3">
-          <i class="bi bi-telephone"></i>
-        </div>
-        <strong>Telefone</strong>
-        <small>(11) 97185-2633</small>
-      </a>
-    </div>
-
-    <div class="contato-item text-center">
-      <a href="https://www.linkedin.com/in/brian-wood00/" target="_blank" rel="noopener noreferrer" class="text-decoration-none text-dark">
-        <div class="icon-circle mb-3">
-          <i class="bi bi-linkedin"></i>
-        </div>
-        <strong>LinkedIn</strong>
-        <small>@Brian Wood</small>
-      </a>
-    </div>
-
-    <div class="contato-item text-center">
-      <a href="https://github.com/BrianWS01" target="_blank" rel="noopener noreferrer" class="text-decoration-none text-dark">
-        <div class="icon-circle mb-3">
-          <i class="bi bi-github"></i>
-        </div>
-        <strong>GitHub</strong>
-        <small>@BrianWS01</small>
-      </a>
+    <!-- Imagem -->
+    <div class="col-md-6 d-flex justify-content-center animate__animated animate__fadeInRight">
+      <img src="assets/imgs/Foto Brian Pessoal.jpg" alt="Foto do Brian Wood"
+        class="img-fluid rounded-circle border border-5 border-primary shadow-lg"
+        style="max-height: 380px; object-fit: cover;">
     </div>
   </div>
 </section>
 
-    <!-- Footer -->
-    <footer class="bg-dark text-light text-center py-3">
-        <small>© 2025 Brian Wood. Todos os direitos reservados.</small>
-    </footer>
+<!-- Sobre -->
+<!-- Sobre -->
+<section id="sobre" class="position-relative py-5 bg-dark text-light">
+  <div class="container position-relative">
+    <!-- Efeito decorativo no fundo -->
+    <div class="position-absolute top-0 start-50 translate-middle-x opacity-10"
+         style="width: 300px; height: 300px; background: radial-gradient(circle, #0d6efd, transparent 70%); filter: blur(120px); z-index: 0;">
+    </div>
 
-    <!-- Bootstrap JS Bundle CDN -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <!-- Custom JS -->
-    <script src="script.js"></script>
+    <div class="row align-items-center position-relative z-1">
+      <!-- Foto -->
+      <div class="col-md-5 text-center mb-4 mb-md-0 animate__animated animate__fadeInLeft">
+        <img src="assets/imgs/Foto Brian Pessoal 2.jpeg"
+             alt="Foto de Brian Wood"
+             class="img-fluid rounded-4 shadow-lg border border-3 border-primary"
+             style="max-height: 380px; object-fit: cover;">
+      </div>
 
-<script>
-    document.addEventListener("DOMContentLoaded", function() {
-  const themeToggleBtn = document.getElementById('theme-toggle');
+      <!-- Texto -->
+      <div class="col-md-7 animate__animated animate__fadeInRight">
+        <h2 class="fw-bold text-primary mb-3">Sobre Mim</h2>
+        <p class="fs-5 text-light mb-4">
+          Sou <strong>Brian Wood</strong>, desenvolvedor <strong>Front-End</strong> apaixonado por tecnologia, design e inovação.
+          Tenho experiência com <strong>HTML</strong>, <strong>CSS</strong>, <strong>JavaScript</strong> e <strong>Bootstrap</strong>,
+          e busco criar interfaces que unem <span class="text-primary fw-semibold">performance, estética e usabilidade</span>.
+        </p>
+        <p class="fs-5 text-white mb-4">
+          Acredito que cada linha de código pode transformar ideias em experiências digitais marcantes.
+          Estou sempre em busca de evoluir — aprendendo, testando e entregando projetos com propósito.
+        </p>
 
-  themeToggleBtn.addEventListener('click', () => {
-    document.body.classList.toggle('light-mode');
+        <a href="#projetos" class="btn btn-outline-primary btn-lg shadow-sm mt-2">
+          <i class="bi bi-code-slash me-2"></i> Ver Meus Projetos
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
 
-    if (document.body.classList.contains('light-mode')) {
-      themeToggleBtn.classList.remove('btn-outline-light');
-      themeToggleBtn.classList.add('btn-outline-dark');
-    } else {
-      themeToggleBtn.classList.remove('btn-outline-dark');
-      themeToggleBtn.classList.add('btn-outline-light');
+<section id="timeline" class="timeline-section py-5">
+  <div class="container">
+    <h2 class="section-title-glow text-center mb-5">
+      <i class="bi bi-clock-history me-2 text-primary"></i>Minha Jornada
+    </h2>
+
+    <div class="timeline">
+
+      <div class="timeline-item left">
+        <div class="timeline-content glass-card">
+          <h4>2021 — Início na Programação</h4>
+          <p>Comecei meus estudos em desenvolvimento web com HTML, CSS e JavaScript. Foi aqui que nasceu minha paixão por criar interfaces.</p>
+        </div>
+      </div>
+
+      <div class="timeline-item right">
+        <div class="timeline-content glass-card">
+          <h4>2022 — Primeiros Projetos</h4>
+          <p>Desenvolvi meus primeiros sites e pequenos sistemas, aprimorando habilidades e aprendendo sobre boas práticas e responsividade.</p>
+        </div>
+      </div>
+
+      <div class="timeline-item left">
+        <div class="timeline-content glass-card">
+          <h4>2023 — Avanço Profissional</h4>
+          <p>Participei de projetos mais complexos, trabalhei com frameworks modernos e aperfeiçoei minha identidade como desenvolvedor front-end.</p>
+        </div>
+      </div>
+
+      <div class="timeline-item right">
+        <div class="timeline-content glass-card">
+          <h4>2024 — Foco em Experiência do Usuário</h4>
+          <p>Aprimorei meu design e UX, criando interfaces que unem estética e funcionalidade para melhorar a experiência do usuário.</p>
+        </div>
+      </div>
+
+      <div class="timeline-item left active">
+        <div class="timeline-content glass-card">
+          <h4>2025 — Desenvolvedor Front-End Júnior</h4>
+          <p>Com mais de <strong>25 projetos concluídos</strong>, venho atuando como desenvolvedor júnior, criando interfaces modernas, performáticas e intuitivas.  
+            Foco em trazer identidade, fluidez e experiência real em cada linha de código.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+
+  </main>
+
+  <!-- Habilidades -->
+  <section id="habilidades" class="container my-5 py-5">
+    <h2 class="text-center mb-4">Habilidades</h2>
+    <br>
+    <div class="row justify-content-center">
+      <div class="col-6 col-md-3 mb-3 text-center">
+        <img src="assets/imgs/html5-original.svg" alt="Icon HTML" style="max-height: 100px; object-fit: cover;">
+      </div>
+      <div class="col-6 col-md-3 mb-3 text-center">
+        <img src="assets/imgs/css3-original.svg" alt="Icon CSS" style="max-height: 100px; object-fit: cover;">
+      </div>
+      <div class="col-6 col-md-3 mb-3 text-center">
+        <img src="assets/imgs/javascript-plain.svg" alt="Icon JavaScript" style="max-height: 90px; object-fit: cover;">
+      </div>
+      <div class="col-6 col-md-3 mb-3 text-center">
+        <img src="assets/imgs/bootstrap-original.svg" alt="Icon bootstrap" style="max-height: 100px; object-fit: cover;">
+      </div>
+    </div>
+  </section>
+
+  <!-- Seção de Projetos -->
+  <h2 class="text-center mb-4 text-light">Projetos</h2>
+  <div class="row justify-content-center gap-5">
+
+    <!-- CARD 1: Exatas Reformas -->
+    <div class="col-md-5">
+      <div class="card card-sm h-100 shadow-sm bg-dark text-light">
+        <iframe src="https://www.exatasreformas.com.br" title="Exatas Reformas" loading="lazy"
+          style="border:0;"></iframe>
+        <div class="card-body">
+          <h5 class="card-title">Exatas Reformas</h5>
+          <button class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#modalExatas">Ver mais</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- CARD 2: Lanches Busch -->
+    <div class="col-md-5">
+      <div class="card card-sm h-10 shadow-sm bg-dark text-light">
+        <iframe src="https://brianws01.github.io/LanchesBusch/" title="Preview Lanches Busch" loading="lazy"
+          style="border:0;"></iframe>
+        <div class="card-body">
+          <h5 class="card-title">Lanches Busch</h5>
+          <button class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#modalLanchesBusch">Ver mais</button>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Contato -->
+  <section id="contato" class="container my-5 py-5">
+    <h2 class="text-center mb-4">Contatos</h2>
+    <div class="d-flex justify-content-center flex-wrap" style="gap: 4rem;">
+      <div class="contato-item text-center">
+        <a href="mailto:brianwood1126@gmail.com" class="text-decoration-none text-dark">
+          <div class="icon-circle mb-3">
+            <i class="bi bi-envelope"></i>
+          </div>
+          <strong>E-mail</strong>
+          <small>Brianwood1126@gmail.com</small>
+        </a>
+      </div>
+
+      <div class="contato-item text-center">
+        <a href="tel:+5511971852633" class="text-decoration-none text-dark">
+          <div class="icon-circle mb-3">
+            <i class="bi bi-telephone"></i>
+          </div>
+          <strong>Telefone</strong>
+          <small>(11) 97185-2633</small>
+        </a>
+      </div>
+
+      <div class="contato-item text-center">
+        <a href="https://www.linkedin.com/in/brian-wood00/" target="_blank" rel="noopener noreferrer"
+          class="text-decoration-none text-dark">
+          <div class="icon-circle mb-3">
+            <i class="bi bi-linkedin"></i>
+          </div>
+          <strong>LinkedIn</strong>
+          <small>@Brian Wood</small>
+        </a>
+      </div>
+
+      <div class="contato-item text-center">
+        <a href="https://github.com/BrianWS01" target="_blank" rel="noopener noreferrer"
+          class="text-decoration-none text-dark">
+          <div class="icon-circle mb-3">
+            <i class="bi bi-github"></i>
+          </div>
+          <strong>GitHub</strong>
+          <small>@BrianWS01</small>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-light text-center py-3">
+    <small>© 2025 Brian Wood. Todos os direitos reservados.</small>
+  </footer>
+
+  <!-- Bootstrap JS Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Particles.js -->
+  <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+  <script>
+
+    document.addEventListener("DOMContentLoaded", function () {
+    const themeToggleBtn = document.getElementById("theme-toggle");
+    const typingText = document.getElementById("typing-text");
+
+    // Tema
+    themeToggleBtn.addEventListener("click", () => {
+        document.body.classList.toggle("light-mode");
+
+        if (document.body.classList.contains("light-mode")) {
+            themeToggleBtn.classList.remove("btn-outline-light");
+            themeToggleBtn.classList.add("btn-outline-dark");
+        } else {
+            themeToggleBtn.classList.remove("btn-outline-dark");
+            themeToggleBtn.classList.add("btn-outline-light");
+        }
+    });
+
+    // Efeito de digitação
+    const text = "Bem-vindo ao meu site!";
+    let index = 0;
+
+    function typeEffect() {
+        if (index < text.length) {
+            typingText.textContent += text.charAt(index);
+            index++;
+            setTimeout(typeEffect, 100);
+        }
     }
-  });
+
+    typeEffect();
 });
 
 
-const text = "Bem-vindo ao meu site!";
-let index = 0;
-const typingText = document.getElementById("typing-text");
+    particlesJS("particles-js", {
+  particles: {
+    number: {
+      value: 100,
+      density: { enable: true, value_area: 800 }
+    },
+    color: {
+      value: ["#444444", "#666666"] // tons escuros e contrastantes
+    },
+    shape: {
+      type: "circle"
+    },
+    opacity: {
+      value: 0.9, // mais visíveis
+      random: false,
+      anim: {
+        enable: true,
+        speed: 1,
+        opacity_min: 0.4,
+        sync: false
+      }
+    },
+    size: {
+      value: 4, // partículas maiores
+      random: true,
+      anim: {
+        enable: true,
+        speed: 2,
+        size_min: 1,
+        sync: false
+      }
+    },
+    line_linked: {
+      enable: true,
+      distance: 140,
+      color: "#555555",
+      opacity: 0.6, // linhas mais fortes
+      width: 1.2
+    },
+    move: {
+      enable: true,
+      speed: 2,
+      direction: "none",
+      random: true,
+      straight: false,
+      out_mode: "out",
+      bounce: false,
+      attract: { enable: false, rotateX: 600, rotateY: 1200 }
+    }
+  },
+  interactivity: {
+    detect_on: "canvas",
+    events: {
+      onhover: { enable: true, mode: "grab" },
+      onclick: { enable: true, mode: "repulse" },
+      resize: true
+    },
+    modes: {
+      grab: { distance: 150, line_linked: { opacity: 0.9 } },
+      repulse: { distance: 180, duration: 0.4 }
+    }
+  },
+  retina_detect: true
+});
 
-function typeEffect() {
-  if (index < text.length) {
-    typingText.textContent += text.charAt(index);
-    index++;
-    setTimeout(typeEffect, 100); // Velocidade da digitação
-  }
-}
+    
+  </script>
 
-typeEffect();
-
-</script>
 </body>
-
 </html>
