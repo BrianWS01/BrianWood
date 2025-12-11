@@ -4,48 +4,68 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Portfólio Brian Wood</title>
+  
+  <!-- SEO Meta Tags -->
+  <title>Brian Wood - Desenvolvedor Front-End | Portfólio</title>
+  <meta name="description" content="Portfólio de Brian Wood, desenvolvedor Front-End especializado em HTML, CSS, JavaScript e Bootstrap. Criando interfaces modernas, rápidas e acessíveis." />
+  <meta name="keywords" content="desenvolvedor front-end, HTML, CSS, JavaScript, Bootstrap, portfólio, web developer" />
+  <meta name="author" content="Brian Wood" />
+  <meta name="robots" content="index, follow" />
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://brianws01.github.io/BrianWood/" />
+  <meta property="og:title" content="Brian Wood - Desenvolvedor Front-End" />
+  <meta property="og:description" content="Desenvolvedor Front-End apaixonado por criar interfaces modernas, rápidas e acessíveis." />
+  <meta property="og:image" content="assets/imgs/Foto Brian Pessoal.jpg" />
+  
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image" />
+  <meta property="twitter:url" content="https://brianws01.github.io/BrianWood/" />
+  <meta property="twitter:title" content="Brian Wood - Desenvolvedor Front-End" />
+  <meta property="twitter:description" content="Desenvolvedor Front-End apaixonado por criar interfaces modernas, rápidas e acessíveis." />
+  <meta property="twitter:image" content="assets/imgs/Foto Brian Pessoal.jpg" />
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/imgs/favicon.svg" />
+  <link rel="apple-touch-icon" href="assets/imgs/Foto Brian Pessoal.jpg" />
+  
+  <!-- Preload Critical Resources -->
+  <link rel="preload" href="assets/style/styles.css" as="style" />
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" as="style" />
+  
+  <!-- Stylesheets -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-  <!-- Bootstrap CSS CDN -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
-  <!-- Custom CSS -->
   <link rel="stylesheet" href="assets/style/styles.css" />
-
-  <style>
-    /* Fundo das partículas */
-   
-  </style>
 </head>
 
 <body>
 
   <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" role="navigation" aria-label="Navegação principal">
     <div class="container">
-      <a class="navbar-brand" href="#">Portfólio - Brian Wood</a>
+      <a class="navbar-brand" href="#bemvindo" aria-label="Ir para o início">Portfólio - Brian Wood</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
         aria-controls="navbarNav" aria-expanded="false" aria-label="Alternar navegação">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ms-auto align-items-center">
-          <li class="nav-item"><a class="nav-link" href="#bemvindo">Início</a></li>
-          <li class="nav-item"><a class="nav-link" href="#sobre">Sobre</a></li>
-          <li class="nav-item"><a class="nav-link" href="#habilidades">Habilidades</a></li>
-          <li class="nav-item"><a class="nav-link" href="#projetos">Projetos</a></li>
-          <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
-          <li class="nav-item ms-3">
-            <button id="theme-toggle" class="btn btn-outline-light btn-sm"
-              title="Alternar modo claro/escuro">🌗</button>
-          </li>
+          <li class="nav-item"><a class="nav-link" href="#bemvindo" aria-label="Ir para seção início">Início</a></li>
+          <li class="nav-item"><a class="nav-link" href="#sobre" aria-label="Ir para seção sobre">Sobre</a></li>
+          <li class="nav-item"><a class="nav-link" href="#experiencia" aria-label="Ir para seção experiência">Experiência</a></li>
+          <li class="nav-item"><a class="nav-link" href="#habilidades" aria-label="Ir para seção habilidades">Habilidades</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projetos" aria-label="Ir para seção projetos">Projetos</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contato" aria-label="Ir para seção contato">Contato</a></li>
         </ul>
       </div>
     </div>
   </nav>
 
-  <main class="row">
+  <main>
 <section id="bemvindo" class="position-relative d-flex flex-row justify-content-center align-items-center text-light"
   style="min-height: 100vh; overflow: hidden;">
 
@@ -56,22 +76,50 @@
   <div id="particles-js" class="position-absolute top-0 start-0 w-100 h-100" style="z-index: 1;"></div>
 
   <!-- Conteúdo principal -->
-  <div class="container position-relative z-2 d-flex flex-wrap align-items-center">
-    <!-- Texto -->
-    <div class="col-md-6 text-start mb-4 mb-md-0 animate__animated animate__fadeInLeft">
-      <h1 class="display-4 fw-bold mb-3">Olá, eu sou <span class="text-primary">Brian Wood</span></h1>
-      <p class="lead mb-4">Desenvolvedor Front-End apaixonado por criar interfaces modernas, rápidas e acessíveis.</p>
-      <div class="d-flex gap-3">
-        <a href="#contato" class="btn btn-primary btn-lg shadow-sm">Entrar em contato</a>
-        <a href="#" target="_blank" class="btn btn-outline-light btn-lg shadow-sm">Download CV</a>
+  <div class="container position-relative z-2">
+    <div class="row align-items-center">
+      <!-- Texto -->
+      <div class="col-md-6 text-start mb-4 mb-md-0 animate__animated animate__fadeInLeft order-2 order-md-1">
+        <!-- Badge de Disponibilidade -->
+        <div class="availability-badge mb-3">
+          <span class="badge-dot"></span>
+          <span class="badge-text">Disponível para oportunidades</span>
+        </div>
+        
+        <h1 class="display-4 fw-bold mb-3">Olá, eu sou <span class="text-primary">Brian Wood</span></h1>
+        <p class="lead mb-3">Desenvolvedor Front-End Júnior | Graduando em Engenharia de Software</p>
+        <p class="mb-4 text-light">Atualmente na <strong class="text-primary">Verslo</strong>, criando interfaces modernas, rápidas e acessíveis para e-commerces.</p>
+        
+        <div class="d-flex gap-3 flex-wrap mb-3">
+          <a href="#contato" class="btn btn-primary btn-lg shadow-sm" aria-label="Ir para seção de contato">
+            <i class="bi bi-envelope me-2"></i>Entrar em contato
+          </a>
+          <a href="Curriculo BrianWood.pdf" download class="btn btn-outline-light btn-lg shadow-sm" aria-label="Baixar currículo" id="download-cv">
+            <i class="bi bi-download me-2"></i>Download CV
+          </a>
+        </div>
+        
+        <!-- Links rápidos -->
+        <div class="d-flex gap-3 flex-wrap">
+          <a href="https://www.linkedin.com/in/brian-wood00/" target="_blank" rel="noopener noreferrer" class="btn btn-outline-primary btn-sm">
+            <i class="bi bi-linkedin me-1"></i>LinkedIn
+          </a>
+          <a href="https://github.com/BrianWS01" target="_blank" rel="noopener noreferrer" class="btn btn-outline-primary btn-sm">
+            <i class="bi bi-github me-1"></i>GitHub
+          </a>
+          <span class="btn btn-outline-secondary btn-sm">
+            <i class="bi bi-geo-alt me-1"></i>Campo Limpo Paulista - SP
+          </span>
+        </div>
       </div>
-    </div>
 
-    <!-- Imagem -->
-    <div class="col-md-6 d-flex justify-content-center animate__animated animate__fadeInRight">
-      <img src="assets/imgs/Foto Brian Pessoal.jpg" alt="Foto do Brian Wood"
-        class="img-fluid rounded-circle border border-5 border-primary shadow-lg"
-        style="max-height: 380px; object-fit: cover;">
+      <!-- Imagem -->
+      <div class="col-md-6 d-flex justify-content-center animate__animated animate__fadeInRight order-1 order-md-2">
+        <img src="assets/imgs/Foto Brian Pessoal.jpg" alt="Foto do Brian Wood, desenvolvedor Front-End"
+          class="img-fluid rounded-circle border border-5 border-primary shadow-lg"
+          style="max-height: 380px; object-fit: cover;"
+          width="380" height="380">
+      </div>
     </div>
   </div>
 </section>
@@ -89,9 +137,10 @@
       <!-- Foto -->
       <div class="col-md-5 text-center mb-4 mb-md-0 animate__animated animate__fadeInLeft">
         <img src="assets/imgs/Foto Brian Pessoal 2.jpeg"
-             alt="Foto de Brian Wood"
+             alt="Foto de Brian Wood trabalhando como desenvolvedor Front-End"
              class="img-fluid rounded-4 shadow-lg border border-3 border-primary"
-             style="max-height: 380px; object-fit: cover;">
+             style="max-height: 380px; object-fit: cover;"
+             width="380" height="380">
       </div>
 
       <!-- Texto -->
@@ -103,13 +152,23 @@
           e busco criar interfaces que unem <span class="text-primary fw-semibold">performance, estética e usabilidade</span>.
         </p>
         <p class="fs-5 text-white mb-4">
+          Além disso, sou <strong class="text-primary">CEO e Founder</strong> da <strong>WoodTec Company</strong>, 
+          uma empresa especializada em soluções digitais de alto impacto. Criamos soluções digitais rápidas, modernas 
+          e orientadas a resultado para empresas que querem vender mais.
+        </p>
+        <p class="fs-5 text-white mb-4">
           Acredito que cada linha de código pode transformar ideias em experiências digitais marcantes.
           Estou sempre em busca de evoluir — aprendendo, testando e entregando projetos com propósito.
         </p>
 
-        <a href="#projetos" class="btn btn-outline-primary btn-lg shadow-sm mt-2">
-          <i class="bi bi-code-slash me-2"></i> Ver Meus Projetos
-        </a>
+        <div class="d-flex gap-3 flex-wrap">
+          <a href="#projetos" class="btn btn-outline-primary btn-lg shadow-sm mt-2">
+            <i class="bi bi-code-slash me-2"></i> Ver Meus Projetos
+          </a>
+          <a href="https://brianws01.github.io/WoodCompany/" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-lg shadow-sm mt-2">
+            <i class="bi bi-building me-2"></i> WoodTec Company
+          </a>
+        </div>
       </div>
     </div>
   </div>
@@ -153,12 +212,250 @@
 
       <div class="timeline-item left active">
         <div class="timeline-content glass-card">
-          <h4>2025 — Desenvolvedor Front-End Júnior</h4>
-          <p>Com mais de <strong>25 projetos concluídos</strong>, venho atuando como desenvolvedor júnior, criando interfaces modernas, performáticas e intuitivas.  
-            Foco em trazer identidade, fluidez e experiência real em cada linha de código.</p>
+          <h4>2025 — Desenvolvedor Front-End Júnior na Verslo</h4>
+          <p>Atuando como Desenvolvedor Front-End Júnior na <strong>Verslo</strong>, colaborando em projetos de e-commerce no ecossistema Shopify e soluções personalizadas. 
+            Com mais de <strong>25 projetos concluídos</strong>, criando interfaces modernas, performáticas e intuitivas.</p>
         </div>
       </div>
 
+    </div>
+  </div>
+</section>
+
+<!-- Seção de Estatísticas/Conquistas -->
+<section id="estatisticas" class="container my-5 py-5">
+  <div class="row g-4 text-center">
+    <div class="col-6 col-md-3">
+      <div class="stat-card">
+        <div class="stat-number">25+</div>
+        <div class="stat-label">Projetos Concluídos</div>
+      </div>
+    </div>
+    <div class="col-6 col-md-3">
+      <div class="stat-card">
+        <div class="stat-number">5</div>
+        <div class="stat-label">E-commerces em Produção</div>
+      </div>
+    </div>
+    <div class="col-6 col-md-3">
+      <div class="stat-card">
+        <div class="stat-number">3+</div>
+        <div class="stat-label">Anos de Experiência</div>
+      </div>
+    </div>
+    <div class="col-6 col-md-3">
+      <div class="stat-card">
+        <div class="stat-number">100%</div>
+        <div class="stat-label">Satisfação dos Clientes</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Experiência Profissional -->
+<section id="experiencia" class="container my-5 py-5">
+  <h2 class="text-center mb-5">
+    <i class="bi bi-briefcase me-2 text-primary"></i>Experiência Profissional
+  </h2>
+  
+  <div class="row g-4">
+    <!-- Verslo -->
+    <div class="col-12">
+      <div class="experience-card">
+        <div class="experience-header">
+          <div>
+            <h4 class="mb-1">Desenvolvedor Júnior - Front-End</h4>
+            <p class="mb-0 text-primary fw-semibold">Verslo</p>
+          </div>
+          <span class="experience-badge">09/2025 - Atual</span>
+        </div>
+        <div class="experience-body">
+          <p>Atuo como Desenvolvedor de Front-end Júnior na Verslo, colaborando em projetos de e-commerce - tanto dentro do ecossistema Shopify quanto em soluções personalizadas fora da plataforma.</p>
+          <ul class="experience-list">
+            <li>Criação de interfaces modernas e responsivas</li>
+            <li>Utilização de ferramentas como Cursor e Trae para otimizar o fluxo de desenvolvimento</li>
+            <li>Garantia de alta performance nas entregas</li>
+            <li>Aplicação de boas práticas de código, design e usabilidade</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- UniFaccamp -->
+    <div class="col-12">
+      <div class="experience-card">
+        <div class="experience-header">
+          <div>
+            <h4 class="mb-1">Técnico de TI</h4>
+            <p class="mb-0 text-primary fw-semibold">UniFaccamp</p>
+          </div>
+          <span class="experience-badge">01/2025 - 09/2025</span>
+        </div>
+        <div class="experience-body">
+          <p>Atuei no suporte a alunos e professores, oferecendo apoio técnico em plataformas EaD (Moodle), aplicações acadêmicas e sistemas internos.</p>
+          <ul class="experience-list">
+            <li>Suporte técnico em plataformas EaD (Moodle)</li>
+            <li>Manutenção de arquivos e tabelas em Excel/CSV</li>
+            <li>Auxílio em normas relacionadas ao MEC</li>
+            <li>Atendimento técnico e organização de dados</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- SESI -->
+    <div class="col-12">
+      <div class="experience-card">
+        <div class="experience-header">
+          <div>
+            <h4 class="mb-1">Estagiário em Tecnologia</h4>
+            <p class="mb-0 text-primary fw-semibold">SESI</p>
+          </div>
+          <span class="experience-badge">11/2023 - 11/2024</span>
+        </div>
+        <div class="experience-body">
+          <p>Atuei como mentor da equipe de robótica FLL (First Lego League) e da equipe da OBR (Olimpíada Brasileira de Robótica), além de auxiliar professores no uso de tecnologias em sala de aula.</p>
+          <ul class="experience-list">
+            <li>Mentor de equipes de robótica premiadas (FLL e OBR)</li>
+            <li>Manipulação de impressoras 3D e laser</li>
+            <li>Apoio no desenvolvimento de projetos para a FEBRACE</li>
+            <li>Desenvolvimento de habilidades de comunicação e mentoria</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Formação e Competências -->
+<section id="formacao" class="container my-5 py-5">
+  <div class="row g-4">
+    <!-- Formação Acadêmica -->
+    <div class="col-12 col-md-6">
+      <h3 class="text-center mb-4">
+        <i class="bi bi-mortarboard me-2 text-primary"></i>Formação Acadêmica
+      </h3>
+      
+      <div class="education-card">
+        <div class="education-header">
+          <h5 class="mb-1">Bacharelado em Engenharia de Software</h5>
+          <p class="mb-0 text-primary">Universidade São Francisco (USF)</p>
+        </div>
+        <div class="education-body">
+          <span class="education-period">2023 - 2027 (em andamento)</span>
+          <p class="mb-0 mt-2">Graduando em Engenharia de Software, desenvolvendo conhecimentos sólidos em desenvolvimento de software, arquitetura de sistemas e boas práticas de programação.</p>
+        </div>
+      </div>
+
+      <div class="education-card">
+        <div class="education-header">
+          <h5 class="mb-1">Técnico em Manutenção Eletromecânica</h5>
+          <p class="mb-0 text-primary">SENAI</p>
+        </div>
+        <div class="education-body">
+          <span class="education-period">Concluído em 2022</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Idiomas e Competências Comportamentais -->
+    <div class="col-12 col-md-6">
+      <h3 class="text-center mb-4">
+        <i class="bi bi-translate me-2 text-primary"></i>Idiomas & Soft Skills
+      </h3>
+      
+      <div class="skills-soft-card">
+        <div class="mb-4">
+          <h5 class="mb-3">Idiomas</h5>
+          <div class="skill-item">
+            <span class="skill-name">Inglês</span>
+            <span class="skill-level">A2 (Básico)</span>
+          </div>
+        </div>
+
+        <div>
+          <h5 class="mb-3">Competências Comportamentais</h5>
+          <div class="soft-skills-grid">
+            <span class="soft-skill-badge">Facilidade de aprendizado</span>
+            <span class="soft-skill-badge">Adaptação rápida</span>
+            <span class="soft-skill-badge">Comunicação clara</span>
+            <span class="soft-skill-badge">Suporte técnico</span>
+            <span class="soft-skill-badge">Trabalho em equipe</span>
+            <span class="soft-skill-badge">Colaboração</span>
+            <span class="soft-skill-badge">Proatividade</span>
+            <span class="soft-skill-badge">Foco em soluções</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Por que me contratar? -->
+<section id="porque-contratar" class="container my-5 py-5">
+  <h2 class="text-center mb-5">
+    <i class="bi bi-star-fill me-2 text-primary"></i>Por que me contratar?
+  </h2>
+  
+  <div class="row g-4">
+    <div class="col-12 col-md-6 col-lg-4">
+      <div class="why-hire-card">
+        <div class="why-hire-icon">
+          <i class="bi bi-lightning-charge-fill"></i>
+        </div>
+        <h4>Experiência Prática</h4>
+        <p>Atualmente atuando como Desenvolvedor Front-End Júnior na Verslo, com experiência real em projetos de e-commerce em produção.</p>
+      </div>
+    </div>
+    
+    <div class="col-12 col-md-6 col-lg-4">
+      <div class="why-hire-card">
+        <div class="why-hire-icon">
+          <i class="bi bi-graph-up-arrow"></i>
+        </div>
+        <h4>Resultados Comprovados</h4>
+        <p>Mais de 25 projetos concluídos, mentor de equipes premiadas em robótica e suporte técnico a dezenas de alunos em plataformas EaD.</p>
+      </div>
+    </div>
+    
+    <div class="col-12 col-md-6 col-lg-4">
+      <div class="why-hire-card">
+        <div class="why-hire-icon">
+          <i class="bi bi-rocket-takeoff-fill"></i>
+        </div>
+        <h4>Empreendedor</h4>
+        <p>CEO e Founder da WoodTec Company, demonstrando capacidade de liderança, visão estratégica e iniciativa.</p>
+      </div>
+    </div>
+    
+    <div class="col-12 col-md-6 col-lg-4">
+      <div class="why-hire-card">
+        <div class="why-hire-icon">
+          <i class="bi bi-book-fill"></i>
+        </div>
+        <h4>Em Constante Evolução</h4>
+        <p>Graduando em Engenharia de Software, sempre aprendendo e aplicando as melhores práticas do mercado.</p>
+      </div>
+    </div>
+    
+    <div class="col-12 col-md-6 col-lg-4">
+      <div class="why-hire-card">
+        <div class="why-hire-icon">
+          <i class="bi bi-people-fill"></i>
+        </div>
+        <h4>Experiência Multidisciplinar</h4>
+        <p>Passagem por diferentes áreas (TI, Robótica, Manutenção) agregando visão ampla e capacidade de adaptação.</p>
+      </div>
+    </div>
+    
+    <div class="col-12 col-md-6 col-lg-4">
+      <div class="why-hire-card">
+        <div class="why-hire-icon">
+          <i class="bi bi-check-circle-fill"></i>
+        </div>
+        <h4>Qualidade Garantida</h4>
+        <p>Foco em código limpo, design moderno, performance e acessibilidade. Entregas que superam expectativas.</p>
+      </div>
     </div>
   </div>
 </section>
@@ -168,99 +465,679 @@
   </main>
 
   <!-- Habilidades -->
-  <section id="habilidades" class="container my-5 py-5">
-    <h2 class="text-center mb-4">Habilidades</h2>
-    <br>
-    <div class="row justify-content-center">
-      <div class="col-6 col-md-3 mb-3 text-center">
-        <img src="assets/imgs/html5-original.svg" alt="Icon HTML" style="max-height: 100px; object-fit: cover;">
+  <section id="habilidades" class="container my-5 py-5" aria-labelledby="habilidades-title">
+    <h2 id="habilidades-title" class="text-center mb-4">
+      <i class="bi bi-code-slash me-2 text-primary"></i>
+      <i class="bi bi-laptop me-2 text-primary"></i>
+      <span class="fw-bold">Habilidades</span>
+    </h2>
+    <p class="text-center mb-5 lead skill-subtitle" style="max-width: 700px; margin: 0 auto;">
+      Domino as principais tecnologias e ferramentas para criar experiências web modernas, performáticas e acessíveis.
+    </p>
+    
+    <!-- Tecnologias Principais -->
+    <div class="mb-5">
+      <h3 class="text-center mb-5 h4 text-primary fw-bold">Tecnologias</h3>
+      <div class="row justify-content-center g-4">
+        <!-- HTML5 -->
+        <div class="col-6 col-md-4 col-lg-3">
+          <div class="tech-card tech-card-html" data-tech="HTML5">
+            <div class="tech-icon-wrapper">
+              <img src="assets/imgs/html5-original.svg" alt="HTML5" class="tech-icon" width="100" height="100" style="display: block;">
+            </div>
+            <h4 class="tech-name mt-3 mb-0">HTML5</h4>
+            <div class="tech-glow"></div>
+          </div>
+        </div>
+        
+        <!-- CSS3 -->
+        <div class="col-6 col-md-4 col-lg-3">
+          <div class="tech-card tech-card-css" data-tech="CSS3">
+            <div class="tech-icon-wrapper">
+              <img src="assets/imgs/css3-original.svg" alt="CSS3" class="tech-icon" width="100" height="100" style="display: block;">
+            </div>
+            <h4 class="tech-name mt-3 mb-0">CSS3</h4>
+            <div class="tech-glow"></div>
+          </div>
+        </div>
+        
+        <!-- JavaScript -->
+        <div class="col-6 col-md-4 col-lg-3">
+          <div class="tech-card tech-card-js" data-tech="JavaScript">
+            <div class="tech-icon-wrapper">
+              <img src="assets/imgs/javascript-plain.svg" alt="JavaScript" class="tech-icon" width="100" height="100" style="display: block;">
+            </div>
+            <h4 class="tech-name mt-3 mb-0">JavaScript</h4>
+            <div class="tech-glow"></div>
+          </div>
+        </div>
+        
+        <!-- Bootstrap -->
+        <div class="col-6 col-md-4 col-lg-3">
+          <div class="tech-card tech-card-bootstrap" data-tech="Bootstrap">
+            <div class="tech-icon-wrapper">
+              <img src="assets/imgs/bootstrap-original.svg" alt="Bootstrap" class="tech-icon" width="100" height="100" style="display: block;">
+            </div>
+            <h4 class="tech-name mt-3 mb-0">Bootstrap</h4>
+            <div class="tech-glow"></div>
+          </div>
+        </div>
+        
+        <!-- Node.js -->
+        <div class="col-6 col-md-4 col-lg-3">
+          <div class="tech-card tech-card-node" data-tech="Node.js">
+            <div class="tech-icon-wrapper">
+              <i class="bi bi-filetype-js tech-icon-svg" style="font-size: 5rem;"></i>
+            </div>
+            <h4 class="tech-name mt-3 mb-0">Node.js</h4>
+            <div class="tech-glow"></div>
+          </div>
+        </div>
+        
+        <!-- Shopify -->
+        <div class="col-6 col-md-4 col-lg-3">
+          <div class="tech-card tech-card-shopify" data-tech="Shopify">
+            <div class="tech-icon-wrapper">
+              <i class="bi bi-shop tech-icon-svg" style="font-size: 5rem;"></i>
+            </div>
+            <h4 class="tech-name mt-3 mb-0">Shopify</h4>
+            <div class="tech-glow"></div>
+          </div>
+        </div>
+        
+        <!-- Liquid -->
+        <div class="col-6 col-md-4 col-lg-3">
+          <div class="tech-card tech-card-liquid" data-tech="Liquid">
+            <div class="tech-icon-wrapper">
+              <i class="bi bi-code-square tech-icon-svg" style="font-size: 5rem;"></i>
+            </div>
+            <h4 class="tech-name mt-3 mb-0">Liquid</h4>
+            <div class="tech-glow"></div>
+          </div>
+        </div>
       </div>
-      <div class="col-6 col-md-3 mb-3 text-center">
-        <img src="assets/imgs/css3-original.svg" alt="Icon CSS" style="max-height: 100px; object-fit: cover;">
+    </div>
+
+    <!-- Habilidades Técnicas -->
+    <div class="mb-5">
+      <h3 class="text-center mb-4 h4 text-primary fw-bold">Competências Técnicas</h3>
+      <p class="text-center mb-4" style="color: rgba(255, 255, 255, 0.7); font-size: 0.95rem;">
+        Especializado em criar soluções que unem performance, acessibilidade e experiência do usuário
+      </p>
+      <div class="row justify-content-center g-3">
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="skill-badge">
+            <i class="bi bi-phone-fill me-2 text-primary"></i>
+            <span>Desenvolvimento Responsivo</span>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="skill-badge">
+            <i class="bi bi-universal-access me-2 text-primary"></i>
+            <span>Acessibilidade Web (A11y)</span>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="skill-badge">
+            <i class="bi bi-speedometer2 me-2 text-primary"></i>
+            <span>Otimização de Performance</span>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="skill-badge">
+            <i class="bi bi-lightning-charge me-2 text-primary"></i>
+            <span>Otimização de Interfaces</span>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="skill-badge">
+            <i class="bi bi-code-slash me-2 text-primary"></i>
+            <span>Boas Práticas de Codificação</span>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="skill-badge">
+            <i class="bi bi-person-heart me-2 text-primary"></i>
+            <span>Experiência do Usuário (UX)</span>
+          </div>
+        </div>
       </div>
-      <div class="col-6 col-md-3 mb-3 text-center">
-        <img src="assets/imgs/javascript-plain.svg" alt="Icon JavaScript" style="max-height: 90px; object-fit: cover;">
-      </div>
-      <div class="col-6 col-md-3 mb-3 text-center">
-        <img src="assets/imgs/bootstrap-original.svg" alt="Icon bootstrap" style="max-height: 100px; object-fit: cover;">
+    </div>
+
+    <!-- Design e Ferramentas -->
+    <div class="mb-5">
+      <h3 class="text-center mb-4 h4 text-primary">Design e Ferramentas</h3>
+      <div class="row justify-content-center g-4">
+        <div class="col-6 col-md-4 col-lg-3">
+          <div class="skill-card text-center" data-skill="Figma">
+            <i class="bi bi-palette-fill skill-icon-icon" style="font-size: 4rem; color: #F24E1E;"></i>
+            <p class="skill-name mt-3 mb-0">Figma</p>
+            <small class="skill-subtitle d-block mt-1">Design de Interfaces</small>
+          </div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-3">
+          <div class="skill-card text-center" data-skill="UX/UI">
+            <i class="bi bi-layout-text-window skill-icon-icon" style="font-size: 4rem; color: #0d6efd;"></i>
+            <p class="skill-name mt-3 mb-0">UX/UI</p>
+            <small class="skill-subtitle d-block mt-1">Boas Práticas</small>
+          </div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-3">
+          <div class="skill-card text-center" data-skill="Git">
+            <i class="bi bi-git skill-icon-icon" style="font-size: 4rem; color: #F05032;"></i>
+            <p class="skill-name mt-3 mb-0">Git</p>
+            <small class="skill-subtitle d-block mt-1">Controle de Versão</small>
+          </div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-3">
+          <div class="skill-card text-center" data-skill="GitHub">
+            <i class="bi bi-github skill-icon-icon github-icon" style="font-size: 4rem;"></i>
+            <p class="skill-name mt-3 mb-0">GitHub</p>
+            <small class="skill-subtitle d-block mt-1">Repositórios</small>
+          </div>
+        </div>
       </div>
     </div>
   </section>
 
   <!-- Seção de Projetos -->
-  <h2 class="text-center mb-4 text-light">Projetos</h2>
-  <div class="row justify-content-center gap-5">
+  <section id="projetos" class="my-5 py-5" aria-labelledby="projetos-title">
+    <div class="container mb-5">
+      <h2 id="projetos-title" class="text-center mb-5">Projetos</h2>
+    </div>
+    
+    <!-- Marquee com os projetos -->
+    <div class="projects-marquee-wrapper-full">
+      <div class="projects-marquee-wrapper">
+      <div class="projects-marquee">
+        <div class="marquee-content">
+          
+          <!-- CARD 1: Wheypuccino -->
+          <div class="marquee-project-card">
+            <div class="card card-sm h-100 shadow-sm bg-dark text-light project-card">
+              <div class="card-img-wrapper">
+                <iframe src="https://www.wheypuccino.com.br" title="Wheypuccino" loading="lazy"
+                  style="border:0;" aria-label="Preview do site Wheypuccino"></iframe>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Wheypuccino</h5>
+                <p class="card-text skill-subtitle">E-commerce para cappuccino proteico</p>
+                <div class="d-flex gap-2 flex-wrap">
+                  <button class="btn btn-secondary btn-sm" data-bs-toggle="modal" data-bs-target="#modalWheypuccino" aria-label="Ver detalhes do projeto Wheypuccino">Ver mais</button>
+                  <a href="https://www.wheypuccino.com.br" target="_blank" rel="noopener noreferrer" class="btn btn-outline-primary btn-sm" aria-label="Abrir site Wheypuccino em nova aba">Visitar Site</a>
+                </div>
+              </div>
+            </div>
+          </div>
 
-    <!-- CARD 1: Exatas Reformas -->
-    <div class="col-md-5">
-      <div class="card card-sm h-100 shadow-sm bg-dark text-light">
-        <iframe src="https://www.exatasreformas.com.br" title="Exatas Reformas" loading="lazy"
-          style="border:0;"></iframe>
-        <div class="card-body">
-          <h5 class="card-title">Exatas Reformas</h5>
-          <button class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#modalExatas">Ver mais</button>
+          <!-- CARD 2: A Confiteria -->
+          <div class="marquee-project-card">
+            <div class="card card-sm h-100 shadow-sm bg-dark text-light project-card">
+              <div class="card-img-wrapper">
+                <iframe src="https://www.aconfiteria.com.br" title="A Confiteria" loading="lazy"
+                  style="border:0;" aria-label="Preview do site A Confiteria"></iframe>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">A Confiteria</h5>
+                <p class="card-text skill-subtitle">E-commerce de doces e produtos saudáveis</p>
+                <div class="d-flex gap-2 flex-wrap">
+                  <button class="btn btn-secondary btn-sm" data-bs-toggle="modal" data-bs-target="#modalAConfiteria" aria-label="Ver detalhes do projeto A Confiteria">Ver mais</button>
+                  <a href="https://www.aconfiteria.com.br" target="_blank" rel="noopener noreferrer" class="btn btn-outline-primary btn-sm" aria-label="Abrir site A Confiteria em nova aba">Visitar Site</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- CARD 3: Smillens Barra da Tijuca -->
+          <div class="marquee-project-card">
+            <div class="card card-sm h-100 shadow-sm bg-dark text-light project-card">
+              <div class="card-img-wrapper">
+                <iframe src="https://smillensbarradatijuca.com" title="Smillens Barra da Tijuca" loading="lazy"
+                  style="border:0;" aria-label="Preview do site Smillens Barra da Tijuca"></iframe>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Smillens Barra da Tijuca</h5>
+                <p class="card-text skill-subtitle">Site institucional para restaurante</p>
+                <div class="d-flex gap-2 flex-wrap">
+                  <button class="btn btn-secondary btn-sm" data-bs-toggle="modal" data-bs-target="#modalSmillens" aria-label="Ver detalhes do projeto Smillens">Ver mais</button>
+                  <a href="https://smillensbarradatijuca.com" target="_blank" rel="noopener noreferrer" class="btn btn-outline-primary btn-sm" aria-label="Abrir site Smillens em nova aba">Visitar Site</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- CARD 4: Nico More -->
+          <div class="marquee-project-card">
+            <div class="card card-sm h-100 shadow-sm bg-dark text-light project-card">
+              <div class="card-img-wrapper">
+                <iframe src="https://www.nicomore.com.br" title="Nico More" loading="lazy"
+                  style="border:0;" aria-label="Preview do site Nico More"></iframe>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Nico More</h5>
+                <p class="card-text skill-subtitle">E-commerce de moda e acessórios</p>
+                <div class="d-flex gap-2 flex-wrap">
+                  <button class="btn btn-secondary btn-sm" data-bs-toggle="modal" data-bs-target="#modalNicoMore" aria-label="Ver detalhes do projeto Nico More">Ver mais</button>
+                  <a href="https://www.nicomore.com.br" target="_blank" rel="noopener noreferrer" class="btn btn-outline-primary btn-sm" aria-label="Abrir site Nico More em nova aba">Visitar Site</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- CARD 5: Exatas Reformas -->
+          <div class="marquee-project-card">
+            <div class="card card-sm h-100 shadow-sm bg-dark text-light project-card">
+              <div class="card-img-wrapper">
+                <iframe src="https://www.exatasreformas.com.br" title="Exatas Reformas" loading="lazy"
+                  style="border:0;" aria-label="Preview do site Exatas Reformas"></iframe>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Exatas Reformas</h5>
+                <p class="card-text skill-subtitle">Site institucional para empresa de reformas</p>
+                <div class="d-flex gap-2 flex-wrap">
+                  <button class="btn btn-secondary btn-sm" data-bs-toggle="modal" data-bs-target="#modalExatas" aria-label="Ver detalhes do projeto Exatas Reformas">Ver mais</button>
+                  <a href="https://www.exatasreformas.com.br" target="_blank" rel="noopener noreferrer" class="btn btn-outline-primary btn-sm" aria-label="Abrir site Exatas Reformas em nova aba">Visitar Site</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Duplicar os cards para criar loop infinito -->
+          <!-- CARD 1: Wheypuccino (duplicado) -->
+          <div class="marquee-project-card">
+            <div class="card card-sm h-100 shadow-sm bg-dark text-light project-card">
+              <div class="card-img-wrapper">
+                <iframe src="https://www.wheypuccino.com.br" title="Wheypuccino" loading="lazy"
+                  style="border:0;" aria-label="Preview do site Wheypuccino"></iframe>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Wheypuccino</h5>
+                <p class="card-text skill-subtitle">E-commerce para cappuccino proteico</p>
+                <div class="d-flex gap-2 flex-wrap">
+                  <button class="btn btn-secondary btn-sm" data-bs-toggle="modal" data-bs-target="#modalWheypuccino" aria-label="Ver detalhes do projeto Wheypuccino">Ver mais</button>
+                  <a href="https://www.wheypuccino.com.br" target="_blank" rel="noopener noreferrer" class="btn btn-outline-primary btn-sm" aria-label="Abrir site Wheypuccino em nova aba">Visitar Site</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- CARD 2: A Confiteria (duplicado) -->
+          <div class="marquee-project-card">
+            <div class="card card-sm h-100 shadow-sm bg-dark text-light project-card">
+              <div class="card-img-wrapper">
+                <iframe src="https://www.aconfiteria.com.br" title="A Confiteria" loading="lazy"
+                  style="border:0;" aria-label="Preview do site A Confiteria"></iframe>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">A Confiteria</h5>
+                <p class="card-text skill-subtitle">E-commerce de doces e produtos saudáveis</p>
+                <div class="d-flex gap-2 flex-wrap">
+                  <button class="btn btn-secondary btn-sm" data-bs-toggle="modal" data-bs-target="#modalAConfiteria" aria-label="Ver detalhes do projeto A Confiteria">Ver mais</button>
+                  <a href="https://www.aconfiteria.com.br" target="_blank" rel="noopener noreferrer" class="btn btn-outline-primary btn-sm" aria-label="Abrir site A Confiteria em nova aba">Visitar Site</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- CARD 3: Smillens Barra da Tijuca (duplicado) -->
+          <div class="marquee-project-card">
+            <div class="card card-sm h-100 shadow-sm bg-dark text-light project-card">
+              <div class="card-img-wrapper">
+                <iframe src="https://smillensbarradatijuca.com" title="Smillens Barra da Tijuca" loading="lazy"
+                  style="border:0;" aria-label="Preview do site Smillens Barra da Tijuca"></iframe>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Smillens Barra da Tijuca</h5>
+                <p class="card-text skill-subtitle">Site institucional para restaurante</p>
+                <div class="d-flex gap-2 flex-wrap">
+                  <button class="btn btn-secondary btn-sm" data-bs-toggle="modal" data-bs-target="#modalSmillens" aria-label="Ver detalhes do projeto Smillens">Ver mais</button>
+                  <a href="https://smillensbarradatijuca.com" target="_blank" rel="noopener noreferrer" class="btn btn-outline-primary btn-sm" aria-label="Abrir site Smillens em nova aba">Visitar Site</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- CARD 4: Nico More (duplicado) -->
+          <div class="marquee-project-card">
+            <div class="card card-sm h-100 shadow-sm bg-dark text-light project-card">
+              <div class="card-img-wrapper">
+                <iframe src="https://www.nicomore.com.br" title="Nico More" loading="lazy"
+                  style="border:0;" aria-label="Preview do site Nico More"></iframe>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Nico More</h5>
+                <p class="card-text skill-subtitle">E-commerce de moda e acessórios</p>
+                <div class="d-flex gap-2 flex-wrap">
+                  <button class="btn btn-secondary btn-sm" data-bs-toggle="modal" data-bs-target="#modalNicoMore" aria-label="Ver detalhes do projeto Nico More">Ver mais</button>
+                  <a href="https://www.nicomore.com.br" target="_blank" rel="noopener noreferrer" class="btn btn-outline-primary btn-sm" aria-label="Abrir site Nico More em nova aba">Visitar Site</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- CARD 5: Exatas Reformas (duplicado) -->
+          <div class="marquee-project-card">
+            <div class="card card-sm h-100 shadow-sm bg-dark text-light project-card">
+              <div class="card-img-wrapper">
+                <iframe src="https://www.exatasreformas.com.br" title="Exatas Reformas" loading="lazy"
+                  style="border:0;" aria-label="Preview do site Exatas Reformas"></iframe>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Exatas Reformas</h5>
+                <p class="card-text skill-subtitle">Site institucional para empresa de reformas</p>
+                <div class="d-flex gap-2 flex-wrap">
+                  <button class="btn btn-secondary btn-sm" data-bs-toggle="modal" data-bs-target="#modalExatas" aria-label="Ver detalhes do projeto Exatas Reformas">Ver mais</button>
+                  <a href="https://www.exatasreformas.com.br" target="_blank" rel="noopener noreferrer" class="btn btn-outline-primary btn-sm" aria-label="Abrir site Exatas Reformas em nova aba">Visitar Site</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
         </div>
       </div>
     </div>
+    </div>
+  </section>
 
-    <!-- CARD 2: Lanches Busch -->
-    <div class="col-md-5">
-      <div class="card card-sm h-10 shadow-sm bg-dark text-light">
-        <iframe src="https://brianws01.github.io/LanchesBusch/" title="Preview Lanches Busch" loading="lazy"
-          style="border:0;"></iframe>
-        <div class="card-body">
-          <h5 class="card-title">Lanches Busch</h5>
-          <button class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#modalLanchesBusch">Ver mais</button>
+  <!-- Modais dos Projetos -->
+  <!-- Modal Wheypuccino -->
+  <div class="modal fade" id="modalWheypuccino" tabindex="-1" aria-labelledby="modalWheypuccinoLabel" aria-hidden="true">
+    <div class="modal-dialog modal-xl modal-dialog-centered">
+      <div class="modal-content bg-dark text-light">
+        <div class="modal-header border-secondary">
+          <h5 class="modal-title" id="modalWheypuccinoLabel">Wheypuccino</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Fechar"></button>
+        </div>
+        <div class="modal-body">
+          <div class="row">
+            <div class="col-md-6 mb-3">
+              <iframe src="https://www.wheypuccino.com.br" style="width: 100%; height: 400px; border: 0;" title="Wheypuccino"></iframe>
+            </div>
+            <div class="col-md-6">
+              <h6 class="text-primary">Sobre o Projeto</h6>
+              <p>E-commerce desenvolvido para Wheypuccino, primeiro cappuccino proteico do mundo. Site completo com catálogo de produtos, carrinho de compras e integração de pagamento.</p>
+              <h6 class="text-primary mt-3">Tecnologias Utilizadas</h6>
+              <div class="d-flex gap-2 flex-wrap">
+                <span class="badge bg-primary">Shopify</span>
+                <span class="badge bg-primary">Liquid</span>
+                <span class="badge bg-primary">HTML5</span>
+                <span class="badge bg-primary">CSS3</span>
+                <span class="badge bg-primary">JavaScript</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer border-secondary">
+          <a href="https://www.wheypuccino.com.br" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Visitar Site</a>
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
         </div>
       </div>
     </div>
+  </div>
 
+  <!-- Modal A Confiteria -->
+  <div class="modal fade" id="modalAConfiteria" tabindex="-1" aria-labelledby="modalAConfiteriaLabel" aria-hidden="true">
+    <div class="modal-dialog modal-xl modal-dialog-centered">
+      <div class="modal-content bg-dark text-light">
+        <div class="modal-header border-secondary">
+          <h5 class="modal-title" id="modalAConfiteriaLabel">A Confiteria</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Fechar"></button>
+        </div>
+        <div class="modal-body">
+          <div class="row">
+            <div class="col-md-6 mb-3">
+              <iframe src="https://www.aconfiteria.com.br" style="width: 100%; height: 400px; border: 0;" title="A Confiteria"></iframe>
+            </div>
+            <div class="col-md-6">
+              <h6 class="text-primary">Sobre o Projeto</h6>
+              <p>E-commerce desenvolvido para A Confiteria, loja especializada em doces e produtos saudáveis. Plataforma completa com gestão de produtos, carrinho e checkout.</p>
+              <h6 class="text-primary mt-3">Tecnologias Utilizadas</h6>
+              <div class="d-flex gap-2 flex-wrap">
+                <span class="badge bg-primary">Shopify</span>
+                <span class="badge bg-primary">Liquid</span>
+                <span class="badge bg-primary">HTML5</span>
+                <span class="badge bg-primary">CSS3</span>
+                <span class="badge bg-primary">JavaScript</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer border-secondary">
+          <a href="https://www.aconfiteria.com.br" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Visitar Site</a>
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal Smillens -->
+  <div class="modal fade" id="modalSmillens" tabindex="-1" aria-labelledby="modalSmillensLabel" aria-hidden="true">
+    <div class="modal-dialog modal-xl modal-dialog-centered">
+      <div class="modal-content bg-dark text-light">
+        <div class="modal-header border-secondary">
+          <h5 class="modal-title" id="modalSmillensLabel">Smillens Barra da Tijuca</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Fechar"></button>
+        </div>
+        <div class="modal-body">
+          <div class="row">
+            <div class="col-md-6 mb-3">
+              <iframe src="https://smillensbarradatijuca.com" style="width: 100%; height: 400px; border: 0;" title="Smillens"></iframe>
+            </div>
+            <div class="col-md-6">
+              <h6 class="text-primary">Sobre o Projeto</h6>
+              <p>Site institucional desenvolvido para o restaurante Smillens na Barra da Tijuca. Design moderno e responsivo com apresentação do cardápio e informações do estabelecimento.</p>
+              <h6 class="text-primary mt-3">Tecnologias Utilizadas</h6>
+              <div class="d-flex gap-2 flex-wrap">
+                <span class="badge bg-primary">HTML5</span>
+                <span class="badge bg-primary">CSS3</span>
+                <span class="badge bg-primary">JavaScript</span>
+                <span class="badge bg-primary">Bootstrap</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer border-secondary">
+          <a href="https://smillensbarradatijuca.com" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Visitar Site</a>
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal Nico More -->
+  <div class="modal fade" id="modalNicoMore" tabindex="-1" aria-labelledby="modalNicoMoreLabel" aria-hidden="true">
+    <div class="modal-dialog modal-xl modal-dialog-centered">
+      <div class="modal-content bg-dark text-light">
+        <div class="modal-header border-secondary">
+          <h5 class="modal-title" id="modalNicoMoreLabel">Nico More</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Fechar"></button>
+        </div>
+        <div class="modal-body">
+          <div class="row">
+            <div class="col-md-6 mb-3">
+              <iframe src="https://www.nicomore.com.br" style="width: 100%; height: 400px; border: 0;" title="Nico More"></iframe>
+            </div>
+            <div class="col-md-6">
+              <h6 class="text-primary">Sobre o Projeto</h6>
+              <p>E-commerce desenvolvido para Nico More, loja de moda e acessórios. Plataforma completa com catálogo de produtos, filtros avançados e sistema de checkout integrado.</p>
+              <h6 class="text-primary mt-3">Tecnologias Utilizadas</h6>
+              <div class="d-flex gap-2 flex-wrap">
+                <span class="badge bg-primary">Shopify</span>
+                <span class="badge bg-primary">Liquid</span>
+                <span class="badge bg-primary">HTML5</span>
+                <span class="badge bg-primary">CSS3</span>
+                <span class="badge bg-primary">JavaScript</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer border-secondary">
+          <a href="https://www.nicomore.com.br" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Visitar Site</a>
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal Exatas Reformas -->
+  <div class="modal fade" id="modalExatas" tabindex="-1" aria-labelledby="modalExatasLabel" aria-hidden="true">
+    <div class="modal-dialog modal-xl modal-dialog-centered">
+      <div class="modal-content bg-dark text-light">
+        <div class="modal-header border-secondary">
+          <h5 class="modal-title" id="modalExatasLabel">Exatas Reformas</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Fechar"></button>
+        </div>
+        <div class="modal-body">
+          <div class="row">
+            <div class="col-md-6 mb-3">
+              <iframe src="https://www.exatasreformas.com.br" style="width: 100%; height: 400px; border: 0;" title="Exatas Reformas"></iframe>
+            </div>
+            <div class="col-md-6">
+              <h6 class="text-primary">Sobre o Projeto</h6>
+              <p>Site institucional desenvolvido para empresa de reformas, com design moderno e responsivo. Foco em apresentar os serviços e facilitar o contato com clientes.</p>
+              <h6 class="text-primary mt-3">Tecnologias Utilizadas</h6>
+              <div class="d-flex gap-2 flex-wrap">
+                <span class="badge bg-primary">HTML5</span>
+                <span class="badge bg-primary">CSS3</span>
+                <span class="badge bg-primary">JavaScript</span>
+                <span class="badge bg-primary">Bootstrap</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer border-secondary">
+          <a href="https://www.exatasreformas.com.br" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Visitar Site</a>
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+        </div>
+      </div>
+    </div>
   </div>
 
   <!-- Contato -->
-  <section id="contato" class="container my-5 py-5">
-    <h2 class="text-center mb-4">Contatos</h2>
-    <div class="d-flex justify-content-center flex-wrap" style="gap: 4rem;">
-      <div class="contato-item text-center">
-        <a href="mailto:brianwood1126@gmail.com" class="text-decoration-none text-dark">
-          <div class="icon-circle mb-3">
-            <i class="bi bi-envelope"></i>
+  <section id="contato" class="container my-5 py-5" aria-labelledby="contato-title">
+    <h2 id="contato-title" class="text-center mb-5">Contato</h2>
+    
+    <div class="row g-4">
+      <!-- Card: Informações de Contato -->
+      <div class="col-12 col-lg-5">
+        <div class="contact-info-card">
+          <div class="contact-card-header">
+            <i class="bi bi-person-vcard me-2"></i>
+            <span>Informações de Contato</span>
           </div>
-          <strong>E-mail</strong>
-          <small>Brianwood1126@gmail.com</small>
-        </a>
+          <div class="contact-card-body">
+            <div class="contact-info-item">
+              <i class="bi bi-telephone-fill"></i>
+              <div>
+                <strong>Telefone</strong>
+                <p class="mb-0">(11) 97185-2633</p>
+              </div>
+            </div>
+            
+            <div class="contact-info-item">
+              <i class="bi bi-envelope-fill"></i>
+              <div>
+                <strong>Email</strong>
+                <p class="mb-0">brianwood1126@gmail.com</p>
+              </div>
+            </div>
+            
+            <div class="contact-info-item">
+              <i class="bi bi-linkedin"></i>
+              <div>
+                <strong>LinkedIn</strong>
+                <p class="mb-0">
+                  <a href="https://www.linkedin.com/in/brian-wood00/" target="_blank" rel="noopener noreferrer" class="contact-link">
+                    @Brian Wood
+                  </a>
+                </p>
+              </div>
+            </div>
+            
+            <div class="contact-info-item">
+              <i class="bi bi-github"></i>
+              <div>
+                <strong>GitHub</strong>
+                <p class="mb-0">
+                  <a href="https://github.com/BrianWS01" target="_blank" rel="noopener noreferrer" class="contact-link">
+                    @BrianWS01
+                  </a>
+                </p>
+              </div>
+            </div>
+            
+            <div class="contact-info-item">
+              <i class="bi bi-geo-alt-fill"></i>
+              <div>
+                <strong>Localização</strong>
+                <p class="mb-0">Campo Limpo Paulista - SP</p>
+              </div>
+            </div>
+            
+            <div class="contact-info-item">
+              <i class="bi bi-clock-fill"></i>
+              <div>
+                <strong>Horário de Atendimento</strong>
+                <p class="mb-0">Segunda a Sexta: 9h às 18h</p>
+              </div>
+            </div>
+            
+            <div class="contact-info-item">
+              <i class="bi bi-briefcase-fill"></i>
+              <div>
+                <strong>Disponibilidade</strong>
+                <p class="mb-0">Aberto a oportunidades</p>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
 
-      <div class="contato-item text-center">
-        <a href="tel:+5511971852633" class="text-decoration-none text-dark">
-          <div class="icon-circle mb-3">
-            <i class="bi bi-telephone"></i>
+      <!-- Card: Envie sua Mensagem -->
+      <div class="col-12 col-lg-7">
+        <div class="contact-form-card">
+          <div class="contact-card-header">
+            <i class="bi bi-send-fill me-2"></i>
+            <span>Envie sua Mensagem</span>
           </div>
-          <strong>Telefone</strong>
-          <small>(11) 97185-2633</small>
-        </a>
-      </div>
-
-      <div class="contato-item text-center">
-        <a href="https://www.linkedin.com/in/brian-wood00/" target="_blank" rel="noopener noreferrer"
-          class="text-decoration-none text-dark">
-          <div class="icon-circle mb-3">
-            <i class="bi bi-linkedin"></i>
+          <div class="contact-card-body">
+            <p class="contact-form-description">Preencha o formulário abaixo e entrarei em contato em breve.</p>
+            
+            <form id="contact-form" class="contact-form-new">
+              <div class="form-group-with-icon">
+                <i class="bi bi-person form-icon"></i>
+                <input type="text" class="form-control" id="nome" name="nome" required placeholder="Seu nome" aria-label="Nome completo">
+              </div>
+              
+              <div class="form-group-with-icon">
+                <i class="bi bi-envelope form-icon"></i>
+                <input type="email" class="form-control" id="email" name="email" required placeholder="seu@email.com" aria-label="Email">
+              </div>
+              
+              <div class="form-group-with-icon">
+                <i class="bi bi-telephone form-icon"></i>
+                <input type="tel" class="form-control" id="telefone" name="telefone" required placeholder="(11) 99999-9999" aria-label="Telefone">
+              </div>
+              
+              <div class="form-group-with-icon">
+                <i class="bi bi-building form-icon"></i>
+                <input type="text" class="form-control" id="empresa" name="empresa" placeholder="Nome da empresa" aria-label="Empresa">
+              </div>
+              
+              <div class="form-group-with-icon">
+                <i class="bi bi-chat-dots form-icon form-icon-textarea"></i>
+                <textarea class="form-control" id="mensagem" name="mensagem" rows="5" required placeholder="Descreva sua necessidade ou dúvida..." aria-label="Mensagem"></textarea>
+              </div>
+              
+              <button type="submit" class="btn-contact-submit">
+                <i class="bi bi-send-fill me-2"></i>
+                ENVIAR MENSAGEM
+              </button>
+              
+              <div id="form-message" class="mt-3 text-center"></div>
+            </form>
           </div>
-          <strong>LinkedIn</strong>
-          <small>@Brian Wood</small>
-        </a>
-      </div>
-
-      <div class="contato-item text-center">
-        <a href="https://github.com/BrianWS01" target="_blank" rel="noopener noreferrer"
-          class="text-decoration-none text-dark">
-          <div class="icon-circle mb-3">
-            <i class="bi bi-github"></i>
-          </div>
-          <strong>GitHub</strong>
-          <small>@BrianWS01</small>
-        </a>
+        </div>
       </div>
     </div>
   </section>
@@ -275,107 +1152,79 @@
 
   <!-- Particles.js -->
   <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
-  <script>
+  
+  <!-- Custom JavaScript -->
+  <script src="assets/javascript/script.js"></script>
 
-    document.addEventListener("DOMContentLoaded", function () {
-    const themeToggleBtn = document.getElementById("theme-toggle");
-    const typingText = document.getElementById("typing-text");
-
-    // Tema
-    themeToggleBtn.addEventListener("click", () => {
-        document.body.classList.toggle("light-mode");
-
-        if (document.body.classList.contains("light-mode")) {
-            themeToggleBtn.classList.remove("btn-outline-light");
-            themeToggleBtn.classList.add("btn-outline-dark");
-        } else {
-            themeToggleBtn.classList.remove("btn-outline-dark");
-            themeToggleBtn.classList.add("btn-outline-light");
-        }
-    });
-
-    // Efeito de digitação
-    const text = "Bem-vindo ao meu site!";
-    let index = 0;
-
-    function typeEffect() {
-        if (index < text.length) {
-            typingText.textContent += text.charAt(index);
-            index++;
-            setTimeout(typeEffect, 100);
-        }
-    }
-
-    typeEffect();
-});
-
-
-    particlesJS("particles-js", {
-  particles: {
-    number: {
-      value: 100,
-      density: { enable: true, value_area: 800 }
+  <!-- Schema.org Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Brian Wood",
+    "jobTitle": "Desenvolvedor Front-End Júnior",
+    "worksFor": {
+      "@type": "Organization",
+      "name": "Verslo"
     },
-    color: {
-      value: ["#444444", "#666666"] // tons escuros e contrastantes
+    "url": "https://brianws01.github.io/BrianWood/",
+    "image": "https://brianws01.github.io/BrianWood/assets/imgs/Foto%20Brian%20Pessoal.jpg",
+    "sameAs": [
+      "https://www.linkedin.com/in/brian-wood00/",
+      "https://github.com/BrianWS01"
+    ],
+    "email": "brianwood1126@gmail.com",
+    "telephone": "+5511971852633",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Campo Limpo Paulista",
+      "addressRegion": "SP",
+      "addressCountry": "BR"
     },
-    shape: {
-      type: "circle"
+    "alumniOf": {
+      "@type": "EducationalOrganization",
+      "name": "Universidade São Francisco (USF)"
     },
-    opacity: {
-      value: 0.9, // mais visíveis
-      random: false,
-      anim: {
-        enable: true,
-        speed: 1,
-        opacity_min: 0.4,
-        sync: false
-      }
-    },
-    size: {
-      value: 4, // partículas maiores
-      random: true,
-      anim: {
-        enable: true,
-        speed: 2,
-        size_min: 1,
-        sync: false
-      }
-    },
-    line_linked: {
-      enable: true,
-      distance: 140,
-      color: "#555555",
-      opacity: 0.6, // linhas mais fortes
-      width: 1.2
-    },
-    move: {
-      enable: true,
-      speed: 2,
-      direction: "none",
-      random: true,
-      straight: false,
-      out_mode: "out",
-      bounce: false,
-      attract: { enable: false, rotateX: 600, rotateY: 1200 }
-    }
-  },
-  interactivity: {
-    detect_on: "canvas",
-    events: {
-      onhover: { enable: true, mode: "grab" },
-      onclick: { enable: true, mode: "repulse" },
-      resize: true
-    },
-    modes: {
-      grab: { distance: 150, line_linked: { opacity: 0.9 } },
-      repulse: { distance: 180, duration: 0.4 }
-    }
-  },
-  retina_detect: true
-});
+    "knowsAbout": [
+      "HTML5",
+      "CSS3",
+      "JavaScript",
+      "Bootstrap",
+      "Shopify",
+      "Liquid",
+      "Front-End Development",
+      "E-commerce",
+      "UX/UI Design"
+    ]
+  }
+  </script>
 
-    
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "Brian Wood - Portfólio",
+    "url": "https://brianws01.github.io/BrianWood/",
+    "author": {
+      "@type": "Person",
+      "name": "Brian Wood"
+    },
+    "description": "Portfólio de Brian Wood, desenvolvedor Front-End especializado em HTML, CSS, JavaScript e Bootstrap."
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "WoodTec Company",
+    "url": "https://brianws01.github.io/WoodCompany/",
+    "founder": {
+      "@type": "Person",
+      "name": "Brian Wood"
+    },
+    "description": "Empresa especializada em soluções digitais de alto impacto."
+  }
   </script>
 
 </body>

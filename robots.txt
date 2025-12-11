@@ -1,0 +1,10 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://brianws01.github.io/BrianWood/sitemap.xml
+
+# Bloquear arquivos desnecessários
+Disallow: /assets/javascript/
+Disallow: /*.pdf$
+
